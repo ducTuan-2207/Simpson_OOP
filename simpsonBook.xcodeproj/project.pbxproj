@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227251ED2B3D0D9800905A6D /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227251EC2B3D0D9800905A6D /* detailsVC.swift */; };
+		227251EF2B3D641D00905A6D /* simpson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227251EE2B3D641D00905A6D /* simpson.swift */; };
 		2289CB3A2B3C20B6008A4041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2289CB392B3C20B6008A4041 /* AppDelegate.swift */; };
 		2289CB3C2B3C20B6008A4041 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2289CB3B2B3C20B6008A4041 /* SceneDelegate.swift */; };
 		2289CB3E2B3C20B6008A4041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2289CB3D2B3C20B6008A4041 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		227251EC2B3D0D9800905A6D /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
+		227251EE2B3D641D00905A6D /* simpson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpson.swift; sourceTree = "<group>"; };
 		2289CB362B3C20B6008A4041 /* simpsonBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpsonBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2289CB392B3C20B6008A4041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2289CB3B2B3C20B6008A4041 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				2289CB422B3C20BA008A4041 /* Assets.xcassets */,
 				2289CB442B3C20BA008A4041 /* LaunchScreen.storyboard */,
 				2289CB472B3C20BA008A4041 /* Info.plist */,
+				227251EC2B3D0D9800905A6D /* detailsVC.swift */,
+				227251EE2B3D641D00905A6D /* simpson.swift */,
 			);
 			path = simpsonBook;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2289CB3E2B3C20B6008A4041 /* ViewController.swift in Sources */,
+				227251EF2B3D641D00905A6D /* simpson.swift in Sources */,
+				227251ED2B3D0D9800905A6D /* detailsVC.swift in Sources */,
 				2289CB3A2B3C20B6008A4041 /* AppDelegate.swift in Sources */,
 				2289CB3C2B3C20B6008A4041 /* SceneDelegate.swift in Sources */,
 			);

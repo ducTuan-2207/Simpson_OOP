@@ -9,8 +9,16 @@ import Foundation
 import UIKit
 
 class Simpson {
-    var name = ""
-    var job = ""
-    var image = UIImage()
+    var name : String
+    var job : String
+    var image : UIImage
     
+    // ham khoi tao
+    
+    init(simpsonName: String, simpsonJob: String, simpsonImange: UIImage){
+        name = simpsonName
+        job = simpsonJob
+        image = simpsonImange
+        
+    }
 }

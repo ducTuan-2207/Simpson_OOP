@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var mySimpson = [Simpson]()
+    var chooseSimpson : Simpson?
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mySimpson.count
@@ -22,6 +23,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chooseSimpson = mySimpson[indexPath.row]
+        self.performSegue(withIdentifier: "todetailsVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "todetailsVC" {
+            let destinationVC = segue.destination as! detailsVC
+            destinationVC.selectedSimpson = chooseSimpson
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -44,5 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         // append: Thêm vào cuối mảng
         mySimpson.append(contentsOf: homerArray)
+        
+        
     }
 }
